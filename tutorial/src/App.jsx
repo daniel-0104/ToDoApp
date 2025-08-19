@@ -1,8 +1,13 @@
+import Header from "./components/Header";
+import ToDo from "./components/ToDo";
+import "./App.css";
+
 function App() {
   return (
-    <>
-      <h1>App</h1>
-    </>
+    <div className="App">
+      <Header />
+      <ToDo />
+    </div>
   )
 }
 

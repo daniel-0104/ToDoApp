@@ -5,7 +5,7 @@ export default function ToDoList({ todoList, setTodoList }) {
     <div className={styles.list}>
       {todoList.map((item) => (
         <ToDoItem
-          key={item}
+          key={item.name}
           item={item}
           todoList={todoList}
           setTodoList={setTodoList}

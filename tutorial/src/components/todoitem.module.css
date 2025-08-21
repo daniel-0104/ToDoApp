@@ -22,3 +22,6 @@
     cursor: pointer;
     font-size: 15pt;
 }
+.completed{
+    text-decoration: line-through;
+}

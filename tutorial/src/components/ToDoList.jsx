@@ -1,11 +1,16 @@
 import ToDoItem from "./ToDoItem";
-
-export default function ToDoList({todoList}){
-    return(
-        <div>
-            {todoList.map((item) => (
-                <ToDoItem key={item} item={item} />
-            ))}
-        </div>
-    );
+import styles from "./todolist.module.css";
+export default function ToDoList({ todoList, setTodoList }) {
+  return (
+    <div className={styles.list}>
+      {todoList.map((item) => (
+        <ToDoItem
+          key={item}
+          item={item}
+          todoList={todoList}
+          setTodoList={setTodoList}
+        />
+      ))}
+    </div>
+  );
 }
